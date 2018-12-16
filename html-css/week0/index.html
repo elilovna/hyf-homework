@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>master class</title>
+    <style>
+        body {
+            background-color: #f0e8ebe8;
+        }
+
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+        }
+
+        .text {
+            margin-right: 6px;
+            margin-bottom: 6px;
+            margin-left: 20px;
+            text-align: justify;
+        }
+
+        .photo-style {
+            position: relative;
+        }
+
+        .girl {
+            position: absolute;
+            margin-left: 20%;
+            max-width: 325px;
+        }
+
+        #purple-square {
+            width: 30%;
+            background: linear-gradient(to bottom right, #e1c7db, #3d046b);
+            position: absolute;
+            margin-left: 8%;
+            margin-top: 3%;
+            padding-top: 40%
+        }
+
+        #blue-square {
+            width: 60%;
+            background: linear-gradient(to bottom right, #bbcef8, #14013f);
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 10%;
+            padding-top: 49%;
+        }
+
+        #pink-square {
+            width: 65%;
+            background: linear-gradient(to bottom right, #c40099, #98e3ff);
+            position: absolute;
+            margin-left: 26%;
+            margin-top: 34%;
+            padding-top: 33%;
+        }
+
+        .introduce {
+            font-family: Georgia;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 25px;
+            color: #14013f;
+        }
+
+        .list {
+            font-family: Arial;
+            font-size: 20px;
+        }
+
+        .btn {
+            border-radius: 0;
+            height: 75px;
+            width: 200px;
+            background-color: rgb(50, 5, 87);
+        }
+
+        .btn__text {
+            font-size: 30px;
+            color: aliceblue;
+            font-weight: bold;
+            font-family: Serif;
+        }
+
+        .btn__center {
+            margin: 0 auto;
+        }
+
+        form {
+            margin: 0 auto;
+        }
+
+        .gallery {
+            width: 350px;
+            padding: 50px;
+            border: solid rgb(132, 118, 179);
+        }
+
+        #child {
+            margin-bottom: 100px;
+        }
+
+        .program {
+            font-family: Serif;
+            font-size: 35px;
+            color: rgb(29, 17, 70);
+            background-color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header">Master class from Svetlana Karpova "Photo session of children"</h1>
+    <div class="row">
+        <div class="column">
+            <p class="text introduce">Svetlana Karpova - the leading MC, a professional new born photographer. On this basic master class you will
+                receive the fundamentals of the theory and practice of shooting newborns. Now this is a very demanded, albeit
+                difficult, direction of commercial photography. Participate in a photo shoot of a baby up to 14 days old
+                and you will learn:</p>
+            <br>
+            <ul class="text list">
+                <em>
+                    <li>You will get acquainted with the game and the greatness of the natural light from the window</li>
+                    <li>Start creating wonderful frames with a minimum set of details</li>
+                    <li>Record the steps of creating priceless photos "baby in the hands of parents, along with older children
+                        in the family"
+                    </li>
+                    <li>We will consider shooting conditions not only in the studio, but also in the home environment, which
+                        is not always convenient for the photographer</li>
+                    <li>Learn to negotiate with the client, mark important aspects before filming. </li>
+                </em>
+            </ul>
+            <br>
+        </div>
+        <div class="column photo-style">
+            <figure id="purple-square"></figure>
+            <figure id="blue-square"></figure>
+            <figure id="pink-square"></figure>
+            <img class="girl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/%221%22_Girl_in_India%2C_October_2013.jpg/800px-%221%22_Girl_in_India%2C_October_2013.jpg"
+                alt="girl" width="60%">
+        </div>
+    </div>
+
+    <div class="list">
+        <h4 class="program">Program</h4>
+        <p>10:00 Part I. Introduction. Theory of shooting infants.</p>
+        <ul>
+            <li>My personal experience. Where to begin</li>
+            <li>Features in the direction of "Photography of newborns."</li>
+            <li>he shoot place. Preparation of the workspace, the guarantee of successful shots. Shooting under the conditions
+                of natural light. Those cases when we use artificial light, rules, arrangement.</li>
+            <li>Props. Which is better to buy fabrics for shooting, where to order accessories or what you can do yourself. Harmonious
+                combination of colors and shades.</li>
+            <li>Photographing a newborn. The main mistakes and difficulties that arise at the beginning of the activity, how
+                to avoid them. Elena shoots in manual mode, so the basic knowledge of the technical part of your camera is
+                necessary to participate in the master class - shutter speed, aperture and exposure. And also the jpg settings
+                and basic histogram concepts.</li>
+        </ul>
+        <p>12:00 II part. Practice.</p>
+        <ul>
+            <li>The length of the survey and the number of images for a single photo session of a children. Simple and complex
+                posing. The technique of winding windings. Creating a mono image. The general plan, a portrait, correct foreshortenings.
+            </li>
+            <li>What you should pay attention to during the composition of the frame, in order to facilitate the further processingprocess.
+            </li>
+        </ul>
+    </div>
+    <h4 class="program">Gallery</h4>
+    <div>
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Portrait_eines_selbstbewussten_Burschen.jpg/800px-Portrait_eines_selbstbewussten_Burschen.jpg"
+            alt="child">
+        <img id="child" class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/One_Year_Old_Toddler.JPG/1024px-One_Year_Old_Toddler.JPG"
+            alt="child">
+        <img class="gallery" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/1_of_Korea%27s_1st_redheads-Terry_W._mom_Korean_%28black_hair%29%2C_dad_Canadian_%28brown_hair%29.jpg/800px-1_of_Korea%27s_1st_redheads-Terry_W._mom_Korean_%28black_hair%29%2C_dad_Canadian_%28brown_hair%29.jpg"
+            alt="child">
+    </div>
+    <form>
+        First name:
+        <br>
+        <input type="text" name="firstname">
+        <br> Last name:
+        <br>
+        <input type="text" name="lastname">
+    </form>
+    <br>
+    <br>
+    <button class="btn btn__text  btn-__center">Apply now</button>
+</body>
+
+</html>

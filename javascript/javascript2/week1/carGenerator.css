@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(247, 243, 212);
+}
+
+#bla {
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    flex: 50%;
+}
+.column2{
+    flex:50%;
+}
+#info {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* #info .current-modules.stargazers.watchers.forks.language {
+    flex:20%;
+} */
+

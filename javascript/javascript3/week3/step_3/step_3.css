@@ -1,0 +1,85 @@
+body {
+    background: url("Confetti-Doodles.svg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#nav-btn {
+    fill: white;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    display: none;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #232525;
+}
+
+aside {
+    position: fixed;
+    float: left;
+    width: 15%;
+    padding-top: 30px;
+    padding-left: 25px;
+    top: 0;
+    bottom: 0;
+    background-color:#8a202071;
+    z-index: 400;
+}
+
+nav {
+    display: block;
+}
+
+nav ul li {
+    line-height: 30px;
+}
+
+nav ul li a {
+    color: #e3e2e2;
+}
+
+nav ul li:hover{
+    background: #581f15;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4em;
+    font-weight: bold;
+    color:white;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+}
+
+#info {
+    float:right;
+    width: 82%;
+}
+
+#info::after {
+    clear:both;
+}
+
+#center {
+    width:60%;
+    background: white;
+    margin: 0 auto;
+    margin-top:5%;
+}
+.style-product input{
+   margin:10px;
+}

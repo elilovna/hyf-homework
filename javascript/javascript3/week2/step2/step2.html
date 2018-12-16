@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home_Work</title>
+    <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+</head>
+
+<body>
+    <form>
+        <input type="text" id="input_id" value="">
+        <input type="button" value="Search" onclick="search()" />
+        <div id="alert" style="color: red"></div>
+    </form>
+
+    <div>
+        <input type="radio" id="good-movies" name="drone" value="goodMovies" onclick="radioFilter('good')">
+        <label for="good-movies">Good movies</label>
+    </div>
+
+    <div>
+        <input type="radio" id="average-movies" name="drone" value="averageMovies" onclick="radioFilter('average')">
+        <label for="average-movies">Average movies</label>
+    </div>
+
+    <div>
+        <input type="radio" id="bad-movies" name="drone" value="badMovies" onclick="radioFilter('bad')">
+        <label for="bad-movies">Bad movies</label>
+    </div>
+
+    <div>
+        <input type="radio" id="all-movies" name="drone" value="allMovies" onclick="radioFilter()">
+        <label for="all-movies">All movies</label>
+    </div>
+
+   
+
+    
+</body>
+<script src="step2.js"></script>
+
+</html>
