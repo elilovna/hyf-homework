@@ -1,0 +1,40 @@
+SHOW tables;
+
+SELECT COUNT(*)
+FROM task;
+
+SELECT COUNT(*)
+FROM task
+WHERE due_date IS NULL;
+
+SELECT *
+FROM task JOIN status ON task.status_id = status.id
+WHERE status.name = "Done";
+
+SELECT *
+FROM task JOIN status ON task.status_id = status.id
+WHERE status.name != "Done";
+
+SELECT task.title, task.created
+FROM task
+ORDER BY created DESC;
+
+SELECT max(created)
+FROM task;
+
+SELECT task.title, task.due_date
+FROM task
+WHERE title like "%database%" OR description like "%database%";
+
+SELECT task.title, status.name
+FROM task JOIN status ON task.status_id = status.id;
+
+SELECT status.name, COUNT(task.status_id)
+FROM task JOIN status ON task.status_id = status.id
+GROUP BY task.status_id;
+
+SELECT status.name, COUNT(task.status_id)
+FROM task JOIN status ON task.status_id = status.id
+GROUP BY task.status_id
+ORDER BY COUNT(task.status_id) desc;
+
