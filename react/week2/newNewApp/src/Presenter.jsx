@@ -17,12 +17,12 @@ const Presenter = (props) => {
         <h1 id='title'>My ToDo List</h1>
         <ul id='container'>
             {todo.map((item, idx) =>
-                <div className='todos'>
-                    <li key={idx}>ToDo: {item.title}</li>
+                <div id={`todoContainer${idx}`} className='todos'>
+                    <li className="firstLi" style={item.done ? {  color:"green" } : { textDecoration: "line-through", color: "red" }} key={idx}>ToDo: {item.title}</li>
                     <li key={idx}>Date: {item.date.toLocaleDateString('en-US', options)}</li>
-                    <div className="buttons">
-                        <button>edit</button>
-                        <button>delete</button>
+                    <div className="ActionBtn">
+                        <button onClick={() => { props.onClick2(idx) }} className="editBtn">done</button>
+                        <button key={idx} className="deleteBtn" onClick={() => { props.onClick(idx) }}>delete</button>
                     </div>
                 </div>)}
         </ul>
