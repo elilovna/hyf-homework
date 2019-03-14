@@ -5,22 +5,26 @@ const todos = [
     {
         title: 'Eat breakfast',
         date: new Date(),
-        done: true
+        done: true,
+        isEditing: false
     },
     {
         title: 'Brush teeth',
         date: new Date(),
-        done: true
+        done: true,
+        isEditing: false
     },
     {
         title: 'Read book',
         date: new Date(),
-        done: true
+        done: true,
+        isEditing: false
     },
     {
         title: 'Get out of bed',
         date: new Date(),
-        done: true
+        done: true,
+        isEditing: false
     },
 ]
 
@@ -71,6 +75,46 @@ class Title extends React.Component {
       
     }
 
+    addNewItem = (idx, event) => {
+        const obj = {...this.state.array[idx]}
+        obj.title = event.target.value
+      
+        console.log(obj.title)
+
+        const newArray = [...this.state.array]
+        newArray[idx] = obj
+
+        this.setState({array: newArray})
+        console.log(this.state.array)
+    }
+
+    editItem = (idx) => {
+        console.log(idx)
+
+        const obj = {...this.state.array[idx]}
+        obj.isEditing = true
+
+        const newArray = [...this.state.array]
+        newArray[idx] = obj
+
+        this.setState({array: newArray})
+    }
+
+
+    setIsEditingToFalse = (idx, event) => {
+        event.preventDefault()
+
+        const obj = {...this.state.array[idx]}
+        obj.isEditing = false
+
+        alert("Done")
+
+        const newArray = [...this.state.array]
+        newArray[idx] = obj
+
+        this.setState({array: newArray})
+    }
+    
     render() {
         return <Presenter
             todo={this.state.array}
@@ -82,6 +126,9 @@ class Title extends React.Component {
             // onChange2={(e) => {
             //     this.setState({time: Date(e.target.value).toDateString()}, console.log(this.state.time))
             // }}
+            setDefaultEditing = {this.setIsEditingToFalse}
+            submit = {this.addNewItem}
+            handleEditing = {this.editItem}
             onClick={this.deleteItem}
             onClick2={this.makeDone}
         />

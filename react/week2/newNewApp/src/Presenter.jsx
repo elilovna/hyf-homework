@@ -12,6 +12,8 @@ const Presenter = (props) => {
             <label className="label">Enter description:</label><br />
             <input placeholder="title" className='input'
                 onChange={props.onChange}></input><br />
+            {/* <input placeholder="data" className='input'
+                onChange2={props.onChange2}></input><br /> */}
             <button onClick={props.addTodo} className="button">add</button>
         </form>
 
