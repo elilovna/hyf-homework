@@ -19,11 +19,6 @@ const Presenter = (props) => {
             <button onClick={props.addTodo} className="button">add</button>
         </form>
 
-        <form>
-            <input placeholder="Search" className="input"></input>
-            <button className="button">add</button>
-        </form>
-
         <div>
             <h1 id='title'>My ToDo List</h1>
             <ul id='container'>
