@@ -5,7 +5,6 @@ import { fetchingUsers } from "./fetchingUsers"
 
 class Container extends React.Component {
     state = {
-        // userInput: null,
         arrWithUsers: null
     }
 
@@ -16,7 +15,6 @@ class Container extends React.Component {
                     .then(data => this.setState({ arrWithUsers: data.items }, console.log(this.state.arrWithUsers)))} />
             {this.state.arrWithUsers && <ListWithUsers array={this.state.arrWithUsers} />}
         </>
-
     }
 }
 

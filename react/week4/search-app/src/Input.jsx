@@ -6,7 +6,6 @@ class Input extends React.Component {
         return <div>
             <form>
                 <input type="text" placeholder="type name" onChange={this.props.onChange} />
-                <input type="submit" />
             </form>
         </div>;
     }
