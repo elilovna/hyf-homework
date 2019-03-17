@@ -1,12 +1,12 @@
 import React from "react"
+import TextField from '@material-ui/core/TextField';
+import "./index.css"
 
 class Input extends React.Component {
 
     render() {
         return <div>
-            <form>
-                <input type="text" placeholder="type name" onChange={this.props.onChange} />
-            </form>
+            <TextField id="standard-search" label="Search field" type="search" placeholder="type name" onChange={this.props.onChange} />
         </div>;
     }
 }
