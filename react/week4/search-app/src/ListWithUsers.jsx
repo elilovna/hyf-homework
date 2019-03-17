@@ -12,7 +12,6 @@ const styles = theme => ({
         flexGrow: 1,
         overflow: 'hidden',
         padding: `0 ${theme.spacing.unit * 3}px`,
-       
     }
 })
 
@@ -23,7 +22,7 @@ class ListWithUsers extends React.Component {
         return <div className={classes.root}>
             <Grid item xs={4}>
                 {array.map(({ id, login }) => {
-                    return <Paper id="test" key={id}>{login}</Paper>
+                    return <Paper className="listItems" key={id}>{login}</Paper>
                 })}
             </Grid>
         </div>
